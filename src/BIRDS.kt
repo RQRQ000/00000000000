@@ -1,36 +1,42 @@
-class BIRDS {
+class BIRDS(birdssize:Int,birdsactive:Int) {
     var size : Int = 1
+    init {
+        size = birdssize
+    }
     var activ: Int = 1
+    init {
+        activ = birdsactive
+    }
     fun sing (){
         if (size>5) {
-            println("говорит:")
-            println("КАААР")}
+            println("\u001B[31m говорит:")
+            println("\u001B[31m КАААР")}
         if (size<5){
-            println("говорит:")
-            println("Чик Чик Чик")}
+            println("\u001B[31m говорит:")
+            println("\u001B[31m Чик Чик Чик")}
     }
     fun trink3 (){
         if (size>5){
-            println("говорит:")
-            println("еще")
+            println("\u001B[31m говорит:")
+            println("\u001B[31m еще")
             size ++
-            println("Размер:")
+            println("\u001B[31m Размер:")
             println(size)
         }
         if (size<5){
-            println("говорит:")
-            println("все все")
+            println("\u001B[31m говорит:")
+            println("\u001B[31m все все")
             size ++
-            println("Размер:")
+            println("\u001B[31m Размер:")
             println(size)
         }
     }
     fun fly () {
         if (activ<21){
-            println("говорит:")
-            println("сложно")}
+            println("\u001B[31m говорит:")
+            println("\u001B[31m сложно")}
         if (activ<21) {
-            println("говорит:")
-            println("уди сейчас снесу")}
+            println("\u001B[31m говорит:")
+            println("\u001B[31m уди сейчас снесу")}
     }
 }

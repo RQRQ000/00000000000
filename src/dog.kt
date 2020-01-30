@@ -1,10 +1,24 @@
-class dog {
-    var size : Int = 1
+import kotlin.random.Random
+
+class dog(dogsize:Int,dogactive:Int) {
+     var size : Int =1
+    init {
+        size=dogsize
+    }
+    var name = "Бобик"
     var activ: Int = 1
+    init {
+        activ = dogactive
+    }
+    var Randomsize:Int = (15..50).random()
+    fun privet1(){
+        println("BOBY:Привет")
+        println("DODO:Привет")
+    }
 
     fun guv (){
         if (size>20){
-            println("говорит:")
+            println(" говорит:")
             println("ГАААААВ")
 
         }
@@ -15,7 +29,7 @@ class dog {
     }
     fun  eat1 (){
         if (size>20){
-            println("говорит:")
+            println(" говорит:")
             println("Еще")
             size ++
             println("Размер:")
@@ -46,6 +60,13 @@ class dog {
         if (activ>6){
             println("говорит:")
             println("давай играть")}
+
+    }
+    fun newdog (){
+        println("У вас новая собака в воображении")
+        println("Ее размер : ")
+        println(Randomsize)
+
 
     }
 }
